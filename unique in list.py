@@ -16,9 +16,9 @@ def main():
         for y in range (len(a)):
             if a[x]==a[y] and x!=y:
                 b.append(a[x])
-    print b
-    c=set(a)-set(b)
-    print c
+    for x in a:
+        if x not in b:
+            print c
 
 if __name__ == '__main__':
     main()
